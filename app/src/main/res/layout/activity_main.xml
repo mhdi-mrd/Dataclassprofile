@@ -1,0 +1,73 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAF5FA">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="32dp">
+
+        <EditText
+            android:id="@+id/nameInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="نام"
+            android:textAlignment="center"
+            android:textDirection="rtl"/>
+
+        <EditText
+            android:id="@+id/ageInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="سن"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textDirection="rtl"
+            android:layout_marginTop="12dp"/>
+
+        <EditText
+            android:id="@+id/emailInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ایمیل"
+            android:inputType="textEmailAddress"
+            android:textAlignment="center"
+            android:textDirection="rtl"
+            android:layout_marginTop="12dp"/>
+
+        <EditText
+            android:id="@+id/bioInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="معرفی کوتاه"
+            android:minLines="2"
+            android:maxLines="5"
+            android:gravity="top|right"
+            android:textAlignment="viewStart"
+            android:textDirection="rtl"
+            android:layout_marginTop="12dp"
+            tools:ignore="RtlCompat" />
+
+        <Button
+            android:id="@+id/submitBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ثبت پروفایل"
+            android:layout_marginTop="18dp"/>
+
+        <TextView
+            android:id="@+id/profileResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textColor="#222"
+            android:layout_marginTop="30dp"/>
+    </LinearLayout>
+</ScrollView>
